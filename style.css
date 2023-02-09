@@ -26,14 +26,14 @@ h1 {
 	width: 25rem;
 	height: 2rem;
 	border: 1px solid black;
-	background: grey;
-	
+	background: #DDDDDD; 
+	border-radius: .5rem;
 }
 
 .progress-frame > .bar {
 	height: 100%;
 	width: 0;
-	background: green;
+	background: #2ECC40;
 	text-align: right;
 	color: white;
 	padding-right: 1rem;
