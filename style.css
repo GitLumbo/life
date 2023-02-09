@@ -32,7 +32,7 @@ h1 {
 
 .progress-frame > .bar {
 	height: 100%;
-	width: 70%;
+	width: 0;
 	background: green;
 	text-align: right;
 	color: white;
