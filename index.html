@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<title>곽서현의 군생활</title>
+	</head>
+	<body>
+		<div class="title">
+			<div class="app">
+			    <h1>곽서현의 전역까지 D-149 남았습니다.</h1>
+			    <div class="progress-frame">
+				    <div class="bar"></div>
+			    </div>
+			</div>
+		</div>
+		<script>
+			const today = new Date();
+			const startDate = new Date(2022, 0, 3);
+			const endDate = new Date(2023, 6, 2);
+			const dayLength = endDate - startDate;
+			const distance = endDate - today;
+			let day = Math.ceil(distance/(1000*60*60*24));
+			const percentage = (dayLength - distance) / dayLength * 100;
+		    window.onload = () => {
+				document.querySelector(".app > h1").innerText = `곽서현 전역까지 D-${day} 남았습니다.`;
+				document.querySelector(".progress-frame > .bar").style.width = percentage + "%";
+				document.querySelector(".progress-frame > .bar").innerText = percentage.toFixed(2) + "%";
+			}
+		</script>
+	</body>
+</html>
