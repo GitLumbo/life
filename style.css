@@ -35,7 +35,8 @@ h1 {
 	width: 0;
 	background: #2ECC40;
 	text-align: right;
-	color: white;
+	color: #AAAAAA;
 	padding-right: 1rem;
-	line-height: 2;
+	line-height: 2; 
+	border-radius: .5rem;
 }
